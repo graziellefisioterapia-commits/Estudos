@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Imagens Dinâmicas</h1>
+        <p>Veja que a imagem se adapta ao tamanhpo do navegador</p>
+    <picture>
+       <!-- Se  a trela tiver no máximo 750px de largura, carregue a foto pequena -->
+        <source media="(max-width: 750px)" srcset="imagens/bicicleta.png" type="image/png">
+        <source media="(max-width: 1200px)" srcset="imagens/carro.png" type="image/png">
+        <img src="imagens/caminhao.png" alt="A imagem grande">
+    </picture>
+
+    <p>Você está  vendo um caminhão, um carro ou uma bicicleta?</p>
+    <p>Experimente aumentar e diminuir o tamanho do seu navegador</p>
+
+    <h1>Áudio</h1>
+
+    
+
+    <audio controls preload="metadata">
+<source src="midia/musica.mp3" type="audio/mpeg">
+<source src="midia/musica.ogg" type="audio/ogg">
+<p>Seu navegador não suporta áudio. <a href="midia/musica.mp3">Clique aqui para baixar o áudio</a>.</p>
+</audio>
+
+
+</body>
+</html>
