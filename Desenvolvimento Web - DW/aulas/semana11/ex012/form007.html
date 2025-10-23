@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form007</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</html>
+<body> 
+    
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php"method="get">
+        
+        <div>
+            <label for="idestado">Estado</label>
+           
+            <option value="">--Selecione o Estado--</option> <select name="estado" id="idestado">
+            <optgroup label="Sudeste">
+                <option value="mg">Minas Gerais</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="es">Espírito Santo</option>
+            </optgroup>
+            
+            <optgroup label="Sul">
+                <option value="sc">Santa Catarina</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="pr">Paraná</option>
+            </optgroup>
+            </select>
+        </div>
+
+        <label for="idmsg">Mensagem</label><br>
+        <textarea name="mensagem" id="idmsg" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+
+    </form>
+        
+</body>
+
+
+
+

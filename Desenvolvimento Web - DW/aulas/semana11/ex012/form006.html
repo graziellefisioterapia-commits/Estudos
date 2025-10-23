@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<body>
+    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form005</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-
+</head>
+<body>
+            
+     
     <h1>Exemplo de Formulário</h1>
     
     <form action="cadstro.php" method="get">
 
         <fieldset>
+            <legend>Preferências</legend>
 
             <div>
-                <legend>Preferências</legend>
                 <label for="idcor">Cor:</label>
-                <input type="cor"name="idcor">
+                <input type="color"name="idcor">
             </div>
 
         </fieldset>
 
         <fieldset>
-            <legend></legend>
+            <legend>Nível de Satisfação</legend>
 
             <div>
                 <label for="idrange">Range</label>
                 <input type="range"name="range"id="idrange">
             </div>
-
         </fieldset>
 
+        <fieldset>
+            <legend>Envio de Arquivo</legend>
 
+            <div>
+                <label for="idfile">Enviar Arquivo</label>
+                <input type="file"name="file"id="idfile">
+            </div>
+        </fieldset>
 
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
 
     </form>
-<body>
+
     <p><a href="ex012.html"rel="prev"><button>Voltar à lista</button></a></p>
+    
 </body>
 
 
