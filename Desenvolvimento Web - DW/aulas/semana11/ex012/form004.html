@@ -13,7 +13,7 @@
     <form action="cadastro.php" method="post" autocomplete="on">
 
         <fieldset>
-            <legend>Contato</legend>
+            <legend>Dados pessoais</legend>
         <div>
             <label for="idnome">Nome</label>
             <input type="text" name="Nome" id="idnome"required minlength="5" maxlength="20" autocomplete="nome" placeholder="Nome Completo">
@@ -28,6 +28,10 @@
             <label for="idfone">Telefone</label>
             <input type="tel" nome="fone" id="tel" required autocomplete="tel" placeholder="(xx)-xxxxx-xxxx">
         </div>
+        <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
 
         </fieldset>
     </form>
